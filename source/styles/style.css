@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+body {
+	font-family: Michroma, sans-serif;
+	background: linear-gradient(135deg, gray 0%, #fff 100%);
+}
+.nav-link {
+	color: aliceblue;
+}
+.navbar-nav .nav-link.active {
+	color: gray;
+}
+.navbar-brand {
+	color: rgb(206, 177, 11);
+	font-size: 2em;
+}
+.navbar-brand:hover {
+	color: rgb(206, 177, 11);
+	text-shadow: 0px 0px 10px #fffb00;
+}
+
+.navbar-toggler {
+	background-color: gray;
+}
+
+.card {
+	background: linear-gradient(180deg, gray 0%, #fff 100%);
+}
+.card a {
+	text-decoration: none;
+	color: rgb(32, 32, 32);
+}
+.card:hover {
+	animation: myAnim 0.1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 10px 0px rgb(0, 0, 0);
+		transform: scale(1.05);
+	}
+}
+
+.sidebar {
+	color: rgb(0, 0, 0);
+	background: linear-gradient(180deg, rgb(172, 172, 172) 0%, #fff 100%);
+}
+.tank-description {
+	text-shadow: -3px -2px 9px #d3c615;
+	margin-block: auto auto;
+}
+@media (max-width: 767px) {
+	.carousel-indicators {
+		display: none;
+	}
+}
+footer {
+	background-color: rgb(37, 37, 37);
+}
+.footer-text,
+.footer-text a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.call-us {
+	animation: CallAnim 2s ease 0s infinite normal forwards;
+}
+@keyframes CallAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.btn-outline-secondary:hover {
+	color: black;
+	background: linear-gradient(90deg, gray 0%, #fff 100%);
+}
+
